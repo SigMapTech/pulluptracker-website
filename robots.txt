@@ -1,0 +1,6 @@
+# robots.txt for pulluptracker.app
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://pulluptracker.app/sitemap.xml
