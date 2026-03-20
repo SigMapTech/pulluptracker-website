@@ -422,25 +422,32 @@ button:focus-visible {
   color: var(--accent);
 }
 
-/* ── Coming Soon Badge ── */
-.coming-soon-badge {
+/* ── App Store Link ── */
+.app-store-link {
   display: inline-block;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  border: 2px solid var(--card-border);
-  border-radius: 12px;
-  padding: 12px 32px;
-  letter-spacing: -0.01em;
 }
 
-.nav-cta.coming-soon {
+.app-store-link img {
+  transition: opacity 0.2s ease;
+}
+
+.app-store-link:hover img {
+  opacity: 0.8;
+}
+
+.nav-cta {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--text-secondary);
-  border: 1px solid var(--card-border);
+  color: #fff;
+  background: var(--accent);
   border-radius: 8px;
   padding: 6px 14px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-cta:hover {
+  opacity: 0.85;
 }
 
 /* ── Fade-in Animation ── */
