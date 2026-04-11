@@ -82,17 +82,23 @@
       <div class="container">
         <div class="highlights-grid">
           <div class="highlight-card fade-in">
-            <span class="highlight-emoji" aria-hidden="true">&#9889;</span>
+            <div class="highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
             <h2 class="highlight-title">Quick Logging</h2>
             <p class="highlight-desc">Log a set in seconds. One tap with customizable defaults, or fine-tune reps, weight, and notes.</p>
           </div>
           <div class="highlight-card fade-in">
-            <span class="highlight-emoji" aria-hidden="true">&#127919;</span>
+            <div class="highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+            </div>
             <h2 class="highlight-title">Goals &amp; Progress</h2>
             <p class="highlight-desc">Set daily and weekly goals. Watch your progress ring fill up and browse stats by week, month, or year.</p>
           </div>
           <div class="highlight-card fade-in">
-            <span class="highlight-emoji" aria-hidden="true">&#128248;</span>
+            <div class="highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            </div>
             <h2 class="highlight-title">Widgets</h2>
             <p class="highlight-desc">See today's progress at a glance. Home screen, lock screen, and inline widgets keep you motivated.</p>
           </div>
@@ -166,8 +172,8 @@
     <!-- Download CTA -->
     <section class="cta" aria-label="Download">
       <div class="container">
-        <h2 class="cta-title fade-in">Ready to Start Tracking?</h2>
-        <p class="cta-subtitle fade-in">Free with optional Pro upgrade. No accounts, no ads.</p>
+        <h2 class="cta-title fade-in">Every Rep Counts</h2>
+        <p class="cta-subtitle fade-in">Start tracking today. Free to download &mdash; no accounts, no ads.</p>
         <a href="https://apps.apple.com/us/app/pull-up-tracker/id6758887554" class="app-store-link fade-in">
           <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="54">
         </a>
@@ -178,7 +184,33 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Pull-Up Tracker. <a href="guide/">Help &amp; Guide</a> &middot; <a href="privacy/">Privacy Policy</a> &middot; <a href="terms/">Terms</a> &middot; <a href="mailto:support@pulluptracker.app">Support</a></p>
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-brand">
+            <img src="images/app-icon.png" alt="" width="32" height="32">
+            <span>Pull-Up Tracker</span>
+          </div>
+          <p class="footer-tagline">A simple, powerful way to track your pull-up habit. Set goals, earn streaks, and stay motivated.</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">App</h3>
+          <ul class="footer-links">
+            <li><a href="https://apps.apple.com/us/app/pull-up-tracker/id6758887554">Download</a></li>
+            <li><a href="guide/">Help &amp; Guide</a></li>
+            <li><a href="mailto:support@pulluptracker.app">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Legal</h3>
+          <ul class="footer-links">
+            <li><a href="privacy/">Privacy Policy</a></li>
+            <li><a href="terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Pull-Up Tracker</p>
+      </div>
     </div>
   </footer>
 
