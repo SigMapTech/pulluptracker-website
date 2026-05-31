@@ -493,6 +493,49 @@ button:focus-visible {
   margin-top: 1px;
 }
 
+/* ── Reviews ── */
+.reviews {
+  padding: 80px 0;
+  background: var(--bg-alt);
+}
+
+.review-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 36px 32px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+.review-stars {
+  color: #FFB800;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.review-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+}
+
+.review-quote p {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.review-author {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
 /* ── CTA ── */
 .cta {
   padding: 100px 0;
