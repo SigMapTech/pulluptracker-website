@@ -120,6 +120,15 @@ html {
   color: var(--text);
 }
 
+/* Section headings on legal pages (privacy, terms) */
+.guide-section h2:not(.guide-section-title) {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 28px 0 10px;
+  color: var(--text);
+}
+
 .guide-section h3 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -150,6 +159,15 @@ html {
 
 .faq-item p {
   margin-bottom: 0;
+}
+
+/* 404 Page */
+.not-found-links {
+  list-style: none;
+  margin: 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Contact Section */

@@ -24,7 +24,7 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="canonical" href="https://pulluptracker.app/">
 
   <link rel="stylesheet" href="style.css">
@@ -37,7 +37,7 @@
   <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
       <a href="/" class="nav-brand">
-        <img src="images/app-icon.png" alt="" class="nav-icon" width="32" height="32">
+        <img src="images/app-icon-64.webp" alt="" class="nav-icon" width="32" height="32">
         <span class="nav-title">Pull-Up Tracker</span>
       </a>
       <a href="https://apps.apple.com/us/app/pull-up-tracker/id6758887554" class="nav-cta">Download</a>
@@ -48,11 +48,11 @@
     <!-- Hero -->
     <section class="hero" aria-label="Introduction">
       <div class="container">
-        <img src="images/app-icon.png" alt="Pull-Up Tracker app icon" class="hero-icon" width="160" height="160">
+        <img src="images/app-icon-320.webp" alt="Pull-Up Tracker app icon" class="hero-icon" width="160" height="160">
         <h1 class="hero-title">Track Every Rep.</h1>
         <p class="hero-tagline">A simple, powerful way to build your pull-up habit.</p>
         <a href="https://apps.apple.com/us/app/pull-up-tracker/id6758887554" class="app-store-link">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="54">
+          <img src="images/app-store-badge.svg" alt="Download on the App Store" width="162" height="54">
         </a>
       </div>
     </section>
@@ -62,15 +62,15 @@
       <div class="container">
         <div class="screenshots-grid fade-in">
           <figure class="screenshot">
-            <img src="images/screenshot-home.png" alt="Home screen showing today's pull-up count, a 7-day bar chart, and recent entries" width="460" height="996" loading="lazy">
+            <img src="images/screenshot-home.webp" alt="Home screen showing today's pull-up count, a 7-day bar chart, and recent entries" width="660" height="1434" loading="lazy">
             <figcaption>Track your daily progress</figcaption>
           </figure>
           <figure class="screenshot screenshot-featured">
-            <img src="images/screenshot-stats.png" alt="Statistics screen with weekly chart and detailed stats including total reps, averages, and active days" width="460" height="996" loading="lazy">
+            <img src="images/screenshot-stats.webp" alt="Statistics screen with weekly chart and detailed stats including total reps, averages, and active days" width="660" height="1434" loading="lazy">
             <figcaption>Detailed weekly &amp; monthly stats</figcaption>
           </figure>
           <figure class="screenshot">
-            <img src="images/screenshot-records.png" alt="Records screen showing current streak, personal bests for reps and daily total, and weighted records" width="460" height="996" loading="lazy">
+            <img src="images/screenshot-records.webp" alt="Records screen showing current streak, personal bests for reps and daily total, and weighted records" width="660" height="1434" loading="lazy">
             <figcaption>Celebrate your personal bests</figcaption>
           </figure>
         </div>
@@ -190,7 +190,7 @@
         <h2 class="cta-title fade-in">Every Rep Counts</h2>
         <p class="cta-subtitle fade-in">Start tracking today. Free to download &mdash; no accounts, no ads.</p>
         <a href="https://apps.apple.com/us/app/pull-up-tracker/id6758887554" class="app-store-link fade-in">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="54">
+          <img src="images/app-store-badge.svg" alt="Download on the App Store" width="162" height="54">
         </a>
       </div>
     </section>
@@ -202,7 +202,7 @@
       <div class="footer-grid">
         <div class="footer-about">
           <div class="footer-brand">
-            <img src="images/app-icon.png" alt="" width="32" height="32">
+            <img src="images/app-icon-64.webp" alt="" width="32" height="32">
             <span>Pull-Up Tracker</span>
           </div>
           <p class="footer-tagline">A simple, powerful way to track your pull-up habit. Set goals, earn streaks, and stay motivated.</p>
@@ -229,23 +229,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Fade-in on scroll (respects prefers-reduced-motion)
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    } else {
-      document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
-    }
-  </script>
+  <script src="site.js"></script>
 </body>
 </html>
