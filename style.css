@@ -313,33 +313,49 @@ button:focus-visible {
   box-shadow: 0 12px 48px rgb(0 0 0 / 0.15);
 }
 
+/* Small screens: horizontal scroll-snap carousel so no screenshot is cropped */
 @media (width < 640px) {
   .screenshots-grid {
-    gap: 12px;
+    gap: 16px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 8px 4px 24px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .screenshots-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .screenshot {
-    width: 140px;
+    width: 200px;
+    scroll-snap-align: center;
+    transform: none;
   }
 
+  /* Auto margins keep the row centered when it fits, scrollable when it doesn't */
   .screenshot:first-child {
-    transform: rotate(-1.5deg) translateY(8px);
+    margin-left: auto;
+    transform: none;
   }
 
   .screenshot:last-child {
-    transform: rotate(1.5deg) translateY(8px);
+    margin-right: auto;
+    transform: none;
   }
 
   .screenshot-featured {
-    width: 160px;
+    width: 200px;
   }
 
   .screenshot img {
-    border-radius: 16px;
+    border-radius: 20px;
   }
 
   .screenshot figcaption {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin-top: 10px;
   }
 }
