@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Help &amp; Guide — Pull-Up Tracker</title>
   <meta name="description" content="Learn how to use Pull-Up Tracker — log workouts, set goals, track progress with widgets, sync with iCloud, and more.">
+  <meta name="apple-itunes-app" content="app-id=6758887554">
   <meta name="theme-color" content="#FF7A5D" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#FF8C71" media="(prefers-color-scheme: dark)">
 
@@ -23,7 +24,7 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
-  <link rel="apple-touch-icon" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
   <link rel="canonical" href="https://pulluptracker.app/guide/">
 
   <link rel="stylesheet" href="../style.css">
@@ -37,7 +38,7 @@
   <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
       <a href="../" class="nav-brand">
-        <img src="../images/app-icon.png" alt="" class="nav-icon" width="32" height="32">
+        <img src="../images/app-icon-64.webp" alt="" class="nav-icon" width="32" height="32">
         <span class="nav-title">Pull-Up Tracker</span>
       </a>
       <a href="../" class="nav-back">&larr; Back</a>
@@ -298,7 +299,7 @@
       <div class="footer-grid">
         <div class="footer-about">
           <div class="footer-brand">
-            <img src="../images/app-icon.png" alt="" width="32" height="32">
+            <img src="../images/app-icon-64.webp" alt="" width="32" height="32">
             <span>Pull-Up Tracker</span>
           </div>
           <p class="footer-tagline">A simple, powerful way to track your pull-up habit. Set goals, earn streaks, and stay motivated.</p>
@@ -325,22 +326,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    } else {
-      document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
-    }
-  </script>
+  <script src="../site.js"></script>
 </body>
 </html>
