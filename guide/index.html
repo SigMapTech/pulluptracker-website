@@ -29,6 +29,80 @@
 
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="guide.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I change the weight unit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go to Settings and change the weight unit between kilograms and pounds. Existing entries will display in the new unit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I log workouts for past dates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. When adding an entry, tap the date field to pick a different date."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "I accidentally deleted an entry. Can I recover it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Go to the History tab and look for the Recently Deleted section at the bottom. Tap to expand it, then swipe left on the entry you want to recover and tap Restore. Deleted entries are kept for 30 days before permanent removal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do streaks work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A streak counts consecutive days with at least one entry. You get a 1-day grace period — taking a single rest day won't break your streak."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why isn't my widget updating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Widgets update shortly after you log an entry. iOS limits how often widgets can refresh to save battery. If your widget seems stuck, try removing and re-adding it. Make sure the app isn't force-quit, as background updates won't work in that state."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My data isn't syncing between devices.",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Check that iCloud is enabled for Pull-Up Tracker on both devices (Settings → Apple Account → iCloud → Apps Using iCloud). Both devices must be signed into the same Apple Account. Sync can take a few moments, especially on the first launch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I switch between light and dark mode?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go to Settings and choose System, Light, or Dark under Appearance. System follows your device setting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Your data stays on your device and in your personal iCloud account. There are no analytics, no tracking, and no third-party services."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -307,7 +381,7 @@
         <div class="footer-col">
           <h3 class="footer-heading">App</h3>
           <ul class="footer-links">
-            <li><a href="https://apps.apple.com/us/app/pull-up-tracker/id6758887554">Download</a></li>
+            <li><a href="https://apps.apple.com/app/pull-up-tracker/id6758887554">Download</a></li>
             <li><a href="../guide/">Help &amp; Guide</a></li>
             <li><a href="mailto:support@pulluptracker.app">Support</a></li>
           </ul>
