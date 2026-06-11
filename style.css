@@ -3,6 +3,9 @@
   --accent: #FF7A5D;
   --accent-hover: #e8654a;
   --accent-soft: rgba(255, 122, 93, 0.08);
+  /* Deeper coral for small button text — keeps white text at >= 4.5:1 (WCAG AA) */
+  --accent-cta: #C8431A;
+  --accent-cta-hover: #A93812;
   --blue: #0055FF;
   --blue-light: #38BDF8;
   --blue-glow: rgba(0, 85, 255, 0.08);
@@ -158,17 +161,17 @@ button:focus-visible {
   font-size: 0.85rem;
   font-weight: 600;
   color: #fff;
-  background: var(--accent);
+  background: var(--accent-cta);
   border-radius: 8px;
   padding: 6px 14px;
   text-decoration: none;
-  transition: opacity 0.2s ease;
+  transition: background-color 0.2s ease;
   display: flex;
   align-items: center;
 }
 
 .nav-cta:hover {
-  opacity: 0.85;
+  background: var(--accent-cta-hover);
   color: #fff;
 }
 
