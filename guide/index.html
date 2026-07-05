@@ -65,7 +65,7 @@
         "name": "How do streaks work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A streak counts consecutive days with at least one entry. You get a 1-day grace period — taking a single rest day won't break your streak."
+          "text": "A streak counts consecutive days with at least one entry. You get a 1-day grace period — taking a single rest day won't break your streak. Turn on the streak reminder in Settings to get an evening heads-up when your streak is about to break."
         }
       },
       {
@@ -90,6 +90,30 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Go to Settings and choose System, Light, or Dark under Appearance. System follows your device setting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the app work offline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, completely. All features work without an internet connection, and no account is needed. iCloud sync simply catches up the next time you're online."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I move my data to another device without iCloud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Export a JSON backup via Settings → Export Data, then import it on the other device via Settings → Import Data. The JSON format is also compatible between the iOS and Android apps, so your history can move with you across platforms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Pull-Up Tracker available for Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — the Android app is launching on Google Play soon. It has the same core features (logging, goals, stats, records, history, notifications, export/import, and Pro), while widgets, Siri, and iCloud sync are iOS-only."
         }
       },
       {
@@ -178,7 +202,7 @@
             <li><strong>Add notes</strong> &mdash; Optional free-text for extra context</li>
             <li><strong>Change the date</strong> &mdash; Log a past workout by adjusting the date picker</li>
           </ul>
-          <p>Your default reps and workout type are saved so logging is fast. Change the defaults in Settings.</p>
+          <p>Your default reps, workout type, and weight are saved so logging is fast. Change the defaults in Settings.</p>
 
           <h3>Editing &amp; Deleting</h3>
           <p>Tap any entry in the recent list on the Home tab to edit it. To delete an entry, open it and tap Delete. A confirmation dialog appears before anything is removed.</p>
@@ -227,13 +251,15 @@
         <section id="history" class="guide-section fade-in">
           <h2 class="guide-section-title">History</h2>
           <p>The History tab shows every entry you've ever logged, organized by year, month, and day. Tap a day to see individual entries. This is also where you can find and edit older entries.</p>
+          <h3>Activity Heatmap</h3>
+          <p>The History tab also includes a contribution-style heatmap showing your training at a glance &mdash; each square is a day, and darker squares mean more reps. Tap or drag across the squares to see the exact total for any day; tap the selected day again to dismiss it.</p>
           <h3>Recently Deleted</h3>
           <p>At the bottom of the History tab you'll find a <strong>Recently Deleted</strong> section. Tap the header to expand it and see entries you've deleted in the last 30 days, along with a countdown showing how many days remain before each entry is permanently removed. Swipe left on any entry and tap <strong>Restore</strong> to bring it back.</p>
         </section>
 
         <!-- Widgets -->
         <section id="widgets" class="guide-section fade-in">
-          <h2 class="guide-section-title">Widgets</h2>
+          <h2 class="guide-section-title">Widgets <span class="platform-badge">iOS only</span></h2>
           <p>Pull-Up Tracker offers several widget styles:</p>
           <ul>
             <li><strong>Small widget</strong> &mdash; Today's total with goal progress ring</li>
@@ -252,7 +278,7 @@
 
         <!-- iCloud Sync -->
         <section id="sync" class="guide-section fade-in">
-          <h2 class="guide-section-title">iCloud Sync</h2>
+          <h2 class="guide-section-title">iCloud Sync <span class="platform-badge">iOS only</span></h2>
           <p>Your entries sync automatically across all your devices using iCloud. Settings like goals, default reps, and appearance also sync.</p>
           <p>Sync requires:</p>
           <ul>
@@ -270,13 +296,14 @@
           <ul>
             <li><strong>Weekly notification</strong> &mdash; Arrives on the first day of your locale's week (e.g., Sunday in the US, Monday in Europe) at 10 AM with your weekly stats</li>
             <li><strong>Monthly notification</strong> &mdash; Arrives on the 1st of each month at 9 AM with your previous month's summary</li>
+            <li><strong>Streak reminder</strong> &mdash; An optional evening reminder (7 PM) that fires only when your streak is about to break, so you can save it with one quick set</li>
           </ul>
-          <p>Tapping a notification opens the corresponding report in the app. A single toggle controls both notifications.</p>
+          <p>Tapping a notification opens the corresponding screen in the app. A single toggle controls the weekly and monthly summaries; the streak reminder has its own separate toggle in Settings.</p>
         </section>
 
         <!-- Siri Shortcuts -->
         <section id="siri" class="guide-section fade-in">
-          <h2 class="guide-section-title">Siri Shortcuts</h2>
+          <h2 class="guide-section-title">Siri Shortcuts <span class="platform-badge">iOS only</span></h2>
           <p>Log pull-ups hands-free with Siri:</p>
           <ul>
             <li><strong>"Log pull-ups"</strong> &mdash; Siri will ask how many reps, then save the entry</li>
@@ -333,7 +360,7 @@
 
           <div class="faq-item">
             <h3>How do streaks work?</h3>
-            <p>A streak counts consecutive days with at least one entry. You get a 1-day grace period &mdash; taking a single rest day won't break your streak.</p>
+            <p>A streak counts consecutive days with at least one entry. You get a 1-day grace period &mdash; taking a single rest day won't break your streak. Turn on the streak reminder in Settings to get an evening heads-up when your streak is about to break.</p>
           </div>
 
           <div class="faq-item">
@@ -349,6 +376,21 @@
           <div class="faq-item">
             <h3>How do I switch between light and dark mode?</h3>
             <p>Go to Settings and choose System, Light, or Dark under Appearance. System follows your device setting.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Does the app work offline?</h3>
+            <p>Yes, completely. All features work without an internet connection, and no account is needed. iCloud sync simply catches up the next time you're online.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I move my data to another device without iCloud?</h3>
+            <p>Yes. Export a JSON backup via Settings &rarr; Export Data, then import it on the other device via Settings &rarr; Import Data. The JSON format is also compatible between the iOS and Android apps, so your history can move with you across platforms.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Is Pull-Up Tracker available for Android?</h3>
+            <p>Yes &mdash; the Android app is launching on Google Play soon. It has the same core features (logging, goals, stats, records, history, notifications, export/import, and Pro), while widgets, Siri, and iCloud sync are iOS-only.</p>
           </div>
 
           <div class="faq-item">
