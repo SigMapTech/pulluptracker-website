@@ -649,6 +649,28 @@ button:focus-visible {
   max-width: 280px;
 }
 
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  color: var(--footer-text);
+  transition: color 0.15s ease;
+}
+
+.footer-social a:hover {
+  color: #FFF;
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 .footer-heading {
   font-size: 0.75rem;
   font-weight: 600;
