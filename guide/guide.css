@@ -185,3 +185,18 @@ html {
 .guide-contact p {
   color: var(--text-secondary);
 }
+
+/* Platform Badge */
+.platform-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  padding: 2px 9px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 999px;
+}
