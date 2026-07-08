@@ -233,7 +233,15 @@ button:focus-visible {
   margin-right: auto;
 }
 
-/* ── App Store Link ── */
+/* ── Store Badges ── */
+.store-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .app-store-link {
   display: inline-block;
 }
@@ -704,6 +712,12 @@ button:focus-visible {
   text-align: center;
   font-size: 0.8rem;
   color: var(--footer-text);
+}
+
+.footer-trademarks {
+  margin-top: 8px;
+  font-size: 0.7rem;
+  opacity: 0.7;
 }
 
 /* ── Fade-in Animation ── */
