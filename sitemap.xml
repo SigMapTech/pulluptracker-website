@@ -24,4 +24,22 @@
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
+    <url>
+        <loc>https://pulluptracker.app/articles/</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://pulluptracker.app/articles/benefits-of-pull-ups/</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://pulluptracker.app/articles/how-to-track-pull-up-progress/</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>

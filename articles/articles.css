@@ -1,0 +1,114 @@
+/* ── Articles Styles ── */
+/* Used by articles/index.html and each article page, on top of style.css + guide.css */
+
+/* Listing cards (articles/index.html) */
+.article-list {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-card {
+  display: block;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.15s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+}
+
+.article-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.article-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.article-card-meta {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.article-card-meta .read-more {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .article-card {
+    transition: none;
+  }
+
+  .article-card:hover {
+    transform: none;
+  }
+}
+
+/* Article page */
+.article-meta {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-top: 10px;
+}
+
+/* Download CTA card at the end of each article */
+.article-cta {
+  max-width: 720px;
+  margin: 56px auto 0;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+.article-cta-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.article-cta p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+/* "Keep reading" links */
+.article-more {
+  max-width: 720px;
+  margin: 40px auto 0;
+}
+
+.article-more h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.article-more ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
