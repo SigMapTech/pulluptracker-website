@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "tech.sigmap.pulluptracker",
+      "sha256_cert_fingerprints": [
+        "E0:87:8F:78:82:14:E6:61:6C:01:4F:57:DF:25:AE:22:1B:13:1E:F6:71:20:92:FA:51:41:70:3B:42:E1:10:FD"
+      ]
+    }
+  }
+]
