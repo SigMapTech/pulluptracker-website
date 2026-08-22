@@ -563,6 +563,72 @@ button:focus-visible {
   color: var(--text-secondary);
 }
 
+/* ── FAQ (landing page; scoped under .faq-list so guide.css's .faq-item is unaffected) ── */
+.faq {
+  padding: 80px 0;
+  background: var(--bg);
+}
+
+.faq-list {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-list .faq-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+}
+
+.faq-list summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: '+';
+  flex-shrink: 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.faq-list .faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-list .faq-item p {
+  padding: 0 24px 18px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.faq-more {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
 /* ── CTA ── */
 .cta {
   padding: 100px 0;
@@ -744,6 +810,10 @@ button:focus-visible {
   }
 
   .screenshot {
+    transition: none;
+  }
+
+  .faq-list summary::after {
     transition: none;
   }
 }
