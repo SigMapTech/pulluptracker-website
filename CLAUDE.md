@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Static marketing website for the Pull-Up Tracker iOS app, hosted on GitHub Pages at [pulluptracker.app](https://pulluptracker.app). No build tools, frameworks, or package managers — just plain HTML and CSS served directly.
+Static marketing website for the Pull-Up Tracker app (iOS and Android), hosted on GitHub Pages at [pulluptracker.app](https://pulluptracker.app). No build tools, frameworks, or package managers — just plain HTML and CSS served directly.
 
 ## Development
 
@@ -12,11 +12,12 @@ No build step. Open `index.html` in a browser or use any local server (e.g., `py
 
 ## Architecture
 
-- `index.html` — Landing page (hero, screenshots, features, CTA)
+- `index.html` — Landing page (hero, screenshots, benefits, platform table, review, FAQ, CTA). `landing.css` holds landing-only styles (scoped under `body.landing`).
 - `guide/index.html` — Help & guide page with TOC and FAQ
 - `articles/index.html` — Article listing page; each article lives at `articles/<slug>/index.html`. `articles/articles.css` holds article-specific styles (listing cards, meta line, "keep reading" links). Articles target long-tail SEO (tracking/progression topics) plus one cornerstone benefits piece. Each article page has Article JSON-LD, a `.download-cta` store-badge box (styles in `guide/guide.css`, shared with the guide), and the Google Play trademark line in its footer (required wherever the Play badge appears). Adding an article: create the slug directory, add a card to `articles/index.html`, add the URL to `sitemap.xml`, cross-link from related articles.
 - `privacy/index.html` — Privacy policy
 - `terms/index.html` — Terms of service
+- `app/<route>/index.html` + `app/app-link.js` — Fallback pages for Android App Links (`/app/home`, `/app/stats`, `/app/add`, …), verified by `.well-known/assetlinks.json`. If the Android app is installed the link opens it; otherwise the page offers the store links. `app-link.js` sets the title/description per route. These pages are `noindex`.
 - `404.html` — Custom not-found page (uses absolute paths since GitHub Pages serves it at any URL)
 - `style.css` — Global styles used by all pages (custom properties, nav, footer, layout)
 - `guide/guide.css` — Additional styles for subpages (guide, privacy, terms, 404 all use this)

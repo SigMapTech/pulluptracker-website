@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://pulluptracker.app/</loc>
-        <lastmod>2026-08-21</lastmod>
+        <lastmod>2026-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://pulluptracker.app/privacy/</loc>
-        <lastmod>2026-06-09</lastmod>
+        <lastmod>2026-10-02</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://pulluptracker.app/guide/</loc>
-        <lastmod>2026-06-09</lastmod>
+        <lastmod>2026-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://pulluptracker.app/terms/</loc>
-        <lastmod>2026-06-09</lastmod>
+        <lastmod>2026-10-02</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
         <loc>https://pulluptracker.app/articles/</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://pulluptracker.app/articles/benefits-of-pull-ups/</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-10-02</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://pulluptracker.app/articles/how-to-track-pull-up-progress/</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-10-02</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
