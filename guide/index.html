@@ -4,23 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Help &amp; Guide — Pull-Up Tracker</title>
-  <meta name="description" content="Learn how to use Pull-Up Tracker — log workouts, set goals, track progress with widgets, sync with iCloud, and more.">
+  <meta name="description" content="Learn how to use Pull-Up Tracker on iPhone and Android — log workouts, set goals, track your progress, and more.">
   <meta name="apple-itunes-app" content="app-id=6758887554">
   <meta name="theme-color" content="#FF7A5D" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#FF8C71" media="(prefers-color-scheme: dark)">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Help & Guide — Pull-Up Tracker">
-  <meta property="og:description" content="Learn how to use Pull-Up Tracker — log workouts, set goals, track progress with widgets, sync with iCloud, and more.">
+  <meta property="og:description" content="Learn how to use Pull-Up Tracker on iPhone and Android — log workouts, set goals, track your progress, and more.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pulluptracker.app/guide/">
-  <meta property="og:image" content="https://pulluptracker.app/images/app-icon.png">
+  <meta property="og:image" content="https://pulluptracker.app/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pull-Up Tracker app screens: today’s pull-up count, weekly stats, and personal records">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Help & Guide — Pull-Up Tracker">
-  <meta name="twitter:description" content="Learn how to use Pull-Up Tracker — log workouts, set goals, track progress with widgets, sync with iCloud, and more.">
-  <meta name="twitter:image" content="https://pulluptracker.app/images/app-icon.png">
+  <meta name="twitter:description" content="Learn how to use Pull-Up Tracker on iPhone and Android — log workouts, set goals, track your progress, and more.">
+  <meta name="twitter:image" content="https://pulluptracker.app/images/og-image.jpg">
+  <meta name="twitter:image:alt" content="Pull-Up Tracker app screens: today’s pull-up count, weekly stats, and personal records">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
@@ -81,7 +85,7 @@
         "name": "My data isn't syncing between devices.",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Check that iCloud is enabled for Pull-Up Tracker on both devices (Settings → Apple Account → iCloud → Apps Using iCloud). Both devices must be signed into the same Apple Account. Sync can take a few moments, especially on the first launch."
+          "text": "Sync uses iCloud and is available on iOS only. Check that iCloud is enabled for Pull-Up Tracker on both devices (Settings → Apple Account → iCloud → Apps Using iCloud). Both devices must be signed into the same Apple Account. Sync can take a few moments, especially on the first launch. On Android, move your data between devices with a JSON backup."
         }
       },
       {
@@ -97,7 +101,7 @@
         "name": "Does the app work offline?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, completely. All features work without an internet connection, and no account is needed. iCloud sync simply catches up the next time you're online."
+          "text": "Yes, completely. All features work without an internet connection, and no account is needed. On iOS, iCloud sync simply catches up the next time you're online."
         }
       },
       {
@@ -121,7 +125,7 @@
         "name": "Is my data private?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Your data stays on your device and in your personal iCloud account. There are no analytics, no tracking, and no third-party services."
+          "text": "Yes. Your data stays on your device and, on iOS, in your personal iCloud account. There are no analytics, no tracking, and no third-party services."
         }
       }
     ]
@@ -148,7 +152,7 @@
     <section class="guide-hero" aria-label="Help and Guide">
       <div class="container">
         <h1 class="guide-hero-title">Help &amp; Guide</h1>
-        <p class="guide-hero-subtitle">Everything you need to know about Pull-Up Tracker.</p>
+        <p class="guide-hero-subtitle">Everything you need to know about Pull-Up Tracker for iPhone and Android.</p>
       </div>
     </section>
 
@@ -218,7 +222,7 @@
             <li>A <strong>progress bar</strong> tracks your weekly goal below the chart</li>
             <li>Widgets display your goal progress too</li>
           </ul>
-          <p>Set a goal to 0 to disable it. Goals sync across your devices via iCloud.</p>
+          <p>Set a goal to 0 to disable it. On iOS, goals sync across your devices via iCloud.</p>
         </section>
 
         <!-- Statistics -->
@@ -336,7 +340,7 @@
           <ul>
             <li><strong>CSV export</strong> &mdash; Export your data in spreadsheet format</li>
           </ul>
-          <p>Pro is a one-time purchase &mdash; no subscription. It syncs across all your devices via your Apple Account. If you've already purchased Pro, tap Restore Purchases in Settings.</p>
+          <p>Pro is a one-time purchase &mdash; no subscription. It carries over to any device signed in to the same Apple Account (iOS) or Google account (Android). If you've already purchased Pro, tap Restore Purchases in Settings.</p>
         </section>
 
         <!-- FAQ -->
@@ -370,7 +374,7 @@
 
           <div class="faq-item">
             <h3>My data isn't syncing between devices.</h3>
-            <p>Check that iCloud is enabled for Pull-Up Tracker on both devices (Settings &rarr; Apple Account &rarr; iCloud &rarr; Apps Using iCloud). Both devices must be signed into the same Apple Account. Sync can take a few moments, especially on the first launch.</p>
+            <p>Sync uses iCloud and is available on iOS only. Check that iCloud is enabled for Pull-Up Tracker on both devices (Settings &rarr; Apple Account &rarr; iCloud &rarr; Apps Using iCloud). Both devices must be signed into the same Apple Account. Sync can take a few moments, especially on the first launch. On Android, move your data between devices with a <a href="#export-import">JSON backup</a>.</p>
           </div>
 
           <div class="faq-item">
@@ -380,7 +384,7 @@
 
           <div class="faq-item">
             <h3>Does the app work offline?</h3>
-            <p>Yes, completely. All features work without an internet connection, and no account is needed. iCloud sync simply catches up the next time you're online.</p>
+            <p>Yes, completely. All features work without an internet connection, and no account is needed. On iOS, iCloud sync simply catches up the next time you're online.</p>
           </div>
 
           <div class="faq-item">
@@ -390,12 +394,12 @@
 
           <div class="faq-item">
             <h3>Is Pull-Up Tracker available for Android?</h3>
-            <p>Yes &mdash; Pull-Up Tracker is <a href="https://play.google.com/store/apps/details?id=tech.sigmap.pulluptracker">available on Google Play</a>. It has the same core features (logging, goals, stats, records, history, notifications, export/import, and Pro), while widgets, Siri, and iCloud sync are iOS-only.</p>
+            <p>Yes &mdash; Pull-Up Tracker is <a href="https://play.google.com/store/apps/details?id=tech.sigmap.pulluptracker&amp;referrer=utm_source%3Dwebsite%26utm_campaign%3Dguide-faq">available on Google Play</a>. It has the same core features (logging, goals, stats, records, history, notifications, export/import, and Pro), while widgets, Siri, and iCloud sync are iOS-only.</p>
           </div>
 
           <div class="faq-item">
             <h3>Is my data private?</h3>
-            <p>Yes. Your data stays on your device and in your personal iCloud account. There are no analytics, no tracking, and no third-party services. Read the full <a href="../privacy/">Privacy Policy</a> for details.</p>
+            <p>Yes. Your data stays on your device and, on iOS, in your personal iCloud account. There are no analytics, no tracking, and no third-party services. Read the full <a href="../privacy/">Privacy Policy</a> for details.</p>
           </div>
         </section>
 
@@ -404,6 +408,20 @@
           <h2 class="guide-section-title">Need More Help?</h2>
           <p>If you have a question that isn't answered here, reach out at <a href="mailto:support@pulluptracker.app">support@pulluptracker.app</a>.</p>
         </section>
+
+        <!-- Download CTA -->
+        <aside class="download-cta fade-in" aria-label="Download the app">
+          <h2 class="download-cta-title">Don&rsquo;t have the app yet?</h2>
+          <p>Pull-Up Tracker is free on iPhone and Android. No ads, no account, no subscription.</p>
+          <div class="store-badges">
+            <a href="https://apps.apple.com/app/pull-up-tracker/id6758887554?pt=644431&amp;ct=guide-cta&amp;mt=8" class="app-store-link">
+              <img src="../images/app-store-badge.svg" alt="Download on the App Store" width="162" height="54">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=tech.sigmap.pulluptracker&amp;referrer=utm_source%3Dwebsite%26utm_campaign%3Dguide-cta" class="app-store-link">
+              <img src="../images/google-play-badge.svg" alt="Get it on Google Play" width="182" height="54">
+            </a>
+          </div>
+        </aside>
 
       </div>
     </div>
@@ -434,7 +452,8 @@
         <div class="footer-col">
           <h3 class="footer-heading">App</h3>
           <ul class="footer-links">
-            <li><a href="https://apps.apple.com/app/pull-up-tracker/id6758887554">Download</a></li>
+            <li><a href="https://apps.apple.com/app/pull-up-tracker/id6758887554?pt=644431&amp;ct=footer&amp;mt=8">Download for iPhone</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=tech.sigmap.pulluptracker&amp;referrer=utm_source%3Dwebsite%26utm_campaign%3Dfooter">Download for Android</a></li>
             <li><a href="../guide/">Help &amp; Guide</a></li>
             <li><a href="../articles/">Articles</a></li>
             <li><a href="mailto:support@pulluptracker.app">Support</a></li>
@@ -450,6 +469,7 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; <span id="year"></span> Pull-Up Tracker</p>
+        <p class="footer-trademarks">Apple, the Apple logo, and App Store are trademarks of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</p>
       </div>
     </div>
   </footer>
