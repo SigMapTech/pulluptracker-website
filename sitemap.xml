@@ -42,4 +42,10 @@
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://pulluptracker.app/articles/weighted-pull-ups/</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
