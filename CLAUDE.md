@@ -21,7 +21,7 @@ No build step. Open `index.html` in a browser or use any local server (e.g., `py
 - `style.css` — Global styles used by all pages (custom properties, nav, footer, layout)
 - `guide/guide.css` — Additional styles for subpages (guide, privacy, terms, 404 all use this)
 - `site.js` — Shared script for all pages (footer year, scroll fade-in)
-- `images/` — App icon, favicon, screenshots, App Store badge. Pages use the resized WebP variants (`app-icon-64.webp`, `app-icon-320.webp`, `screenshot-*.webp`); the full-size PNGs are kept as source assets and for `og:image`. Regenerate variants with `sips` + `cwebp` if a source image changes.
+- `images/` — App icon, favicon, screenshots, App Store badge. Pages use the resized WebP variants (`app-icon-64.webp`, `app-icon-320.webp`, `screenshot-*.webp`); the full-size PNGs are kept as source assets. Regenerate variants with `sips` + `cwebp` if a source image changes. `og-image.jpg` (1200×630) is the social share preview on every page; it is rendered from `og-image-source.html` with headless Chrome (command in that file's comment), so regenerate it when screenshots change.
 
 ## Conventions
 
