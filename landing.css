@@ -8,6 +8,12 @@
 .hero-reassurance { margin-top: 20px; font-size: .9375rem; color: var(--text-secondary); }
 .hero-reassurance strong { color: var(--text); }
 .landing .text-link, .landing .faq a { color: var(--link); text-decoration: underline; text-underline-offset: 4px; }
+/* Four phones: let them shrink to fit the column instead of using fixed widths */
+@media (width >= 640px) {
+  .screenshots-grid { gap: 20px; }
+  .screenshot { flex: 0 1 190px; width: auto; min-width: 0; }
+  .screenshot-featured { flex-basis: 215px; }
+}
 .landing .highlights { padding: 40px 0; }
 .landing .highlight-card { text-align: left; padding: 24px; }
 .benefit-number { display: block; color: var(--link); font-size: .875rem; font-weight: 700; margin-bottom: 16px; }
