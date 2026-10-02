@@ -12,7 +12,7 @@ No build step. Open `index.html` in a browser or use any local server (e.g., `py
 
 ## Architecture
 
-- `index.html` — Landing page (hero, screenshots, benefits, platform table, review, FAQ, CTA). `landing.css` holds landing-only styles (scoped under `body.landing`).
+- `index.html` — Landing page (hero, screenshots, benefits with a "more ways to stay on track" feature list, platform table, review, FAQ, CTA). `landing.css` holds landing-only styles (scoped under `body.landing`).
 - `guide/index.html` — Help & guide page with TOC and FAQ
 - `articles/index.html` — Article listing page; each article lives at `articles/<slug>/index.html`. `articles/articles.css` holds article-specific styles (listing cards, meta line, "keep reading" links). Articles target long-tail SEO (tracking/progression topics) plus one cornerstone benefits piece. Each article page has Article JSON-LD, a `.download-cta` store-badge box (styles in `guide/guide.css`, shared with the guide), and the Google Play trademark line in its footer (required wherever the Play badge appears). Adding an article: create the slug directory, add a card to `articles/index.html`, add the URL to `sitemap.xml`, cross-link from related articles.
 - `privacy/index.html` — Privacy policy
