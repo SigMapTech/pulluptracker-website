@@ -41,6 +41,7 @@
 .platform-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 24px; color: var(--text-secondary); font-size: .9375rem; }
 .platform-notes strong { color: var(--text); }
 .landing .reviews { padding: 36px 0; }
+.review-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .landing .review-card { max-width: none; border: 0; box-shadow: none; padding: 12px 0; background: transparent; }
 .landing .review-stars { margin-bottom: 8px; }
 .landing .review-quote p { margin-bottom: 12px; }
@@ -61,6 +62,7 @@
   .hero-reassurance strong { display: block; }
   .platforms { padding: 40px 0; }
   .platform-notes { grid-template-columns: 1fr; gap: 16px; }
+  .review-grid { grid-template-columns: 1fr; gap: 16px; }
   .platform-table th, .platform-table td { padding: 14px 8px; font-size: .875rem; }
   .platform-table tbody th { width: 48%; }
 }
