@@ -59,6 +59,14 @@
       },
       {
         "@type": "Question",
+        "name": "Can I track chin-ups or neutral-grip pull-ups?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Use the Pull-up / Chin-up / Neutral control in the entry sheet to set each set's grip. Records keep a separate best for each grip, while totals, goals, streaks, and reports count every set."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "I accidentally deleted an entry. Can I recover it?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -202,12 +210,14 @@
           <p>Tap the <strong>+</strong> button to open the entry sheet. You can:</p>
           <ul>
             <li><strong>Set reps</strong> &mdash; Use the stepper or tap the number to type directly</li>
+            <li><strong>Choose a grip</strong> &mdash; Pull-up (palms facing away), Chin-up (palms facing you), or Neutral (palms facing each other)</li>
             <li><strong>Choose a workout type</strong> &mdash; Normal, Weighted, Assisted, or Other</li>
             <li><strong>Add weight</strong> &mdash; Appears for Weighted and Assisted types, in kg or lbs (set in Settings)</li>
             <li><strong>Add notes</strong> &mdash; Optional free-text for extra context</li>
             <li><strong>Change the date</strong> &mdash; Log a past workout by adjusting the date picker</li>
           </ul>
-          <p>Your default reps, workout type, and weight are saved so logging is fast. Change the defaults in Settings.</p>
+          <p>Your default reps, workout type, and weight are saved so logging is fast. Change the defaults in Settings. A new set starts on the grip of your latest entry, so if you mostly do chin-ups you don't have to pick it every time.</p>
+          <p>Entries show their grip in the list (for example &ldquo;Chin-up&rdquo; or &ldquo;Neutral grip&rdquo;). Totals, goals, streaks, widgets, and reports count every grip.</p>
 
           <h3>Editing &amp; Deleting</h3>
           <p>Tap any entry in the recent list on the Home tab to edit it. To delete an entry, open it and tap Delete. A confirmation dialog appears before anything is removed.</p>
@@ -223,7 +233,7 @@
             <li>A <strong>progress bar</strong> tracks your weekly goal below the chart</li>
             <li>Widgets display your goal progress too</li>
           </ul>
-          <p>Set a goal to 0 to disable it. On iOS, goals sync across your devices via iCloud.</p>
+          <p>Tap Daily Goal or Weekly Goal and type the exact number you want: up to 500 a day or 3,500 a week. Set a goal to 0, or tap <strong>No goal</strong>, to disable it. On iOS, goals sync across your devices via iCloud.</p>
         </section>
 
         <!-- Statistics -->
@@ -245,10 +255,10 @@
           <h2 class="guide-section-title">Personal Records</h2>
           <p>The Records tab automatically tracks your best performances:</p>
           <ul>
-            <li><strong>Most reps in one set</strong> &mdash; A separate record for each workout type (Normal, Weighted, Assisted, Other), so an assisted set never hides your normal pull-up best. Weighted records also show the added weight.</li>
+            <li><strong>Most reps in one set</strong> &mdash; A separate record for each grip and workout type (for example &ldquo;Pull-ups&rdquo;, &ldquo;Chin-ups&rdquo;, or &ldquo;Neutral grip &middot; Weighted&rdquo;), so a chin-up or an assisted set never hides your normal pull-up best. Weighted records also show the added weight.</li>
             <li><strong>Best day</strong> &mdash; Your highest daily total across all workout types</li>
             <li><strong>Current and longest streaks</strong> &mdash; Streaks allow 1 rest day without breaking</li>
-            <li><strong>Heaviest weight</strong> &mdash; The most weight you've added to a weighted set</li>
+            <li><strong>Heaviest weight</strong> &mdash; The most weight you've added to a weighted set, for each grip</li>
           </ul>
         </section>
 
@@ -312,11 +322,12 @@
           <p>Log pull-ups hands-free with Siri. Each phrase ends with the app's name on your Home Screen, <strong>Pull-Ups</strong>:</p>
           <ul>
             <li><strong>"Log pull-ups in Pull-Ups"</strong> &mdash; Siri will ask how many reps, then save the entry. "Record pull-ups" and "Add pull-ups" work too.</li>
+            <li><strong>"Log chin-ups in Pull-Ups"</strong> or <strong>"Log neutral-grip pull-ups in Pull-Ups"</strong> &mdash; Logs the set with that grip, and Siri's reply names it (&ldquo;Logged 10 chin-ups&rdquo;). &ldquo;Hammer-grip&rdquo; and &ldquo;parallel-grip pull-ups&rdquo; work too.</li>
             <li><strong>"Show my stats in Pull-Ups"</strong> &mdash; Opens the Stats tab</li>
             <li><strong>"Show my history in Pull-Ups"</strong> &mdash; Opens the History tab</li>
             <li><strong>"Show my records in Pull-Ups"</strong> &mdash; Opens the Records tab</li>
           </ul>
-          <p>You can also use these in the Shortcuts app to build custom automations.</p>
+          <p>You can also use these in the Shortcuts app to build custom automations. The Log Pull-Ups action has a <strong>Grip</strong> option, which defaults to pull-ups. Siri phrases are in English.</p>
         </section>
 
         <!-- Export & Import -->
@@ -356,6 +367,11 @@
           <div class="faq-item">
             <h3>Can I log workouts for past dates?</h3>
             <p>Yes. When adding an entry, tap the date field to pick a different date.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I track chin-ups or neutral-grip pull-ups?</h3>
+            <p>Yes. Use the <strong>Pull-up / Chin-up / Neutral</strong> control in the entry sheet to set each set's grip. Records keep a separate best for each grip, while totals, goals, streaks, and reports count every set.</p>
           </div>
 
           <div class="faq-item">
