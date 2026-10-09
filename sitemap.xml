@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://pulluptracker.app/</loc>
-        <lastmod>2026-10-02</lastmod>
+        <lastmod>2026-10-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://pulluptracker.app/privacy/</loc>
-        <lastmod>2026-10-02</lastmod>
+        <lastmod>2026-10-09</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://pulluptracker.app/guide/</loc>
-        <lastmod>2026-10-02</lastmod>
+        <lastmod>2026-10-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -38,13 +38,13 @@
     </url>
     <url>
         <loc>https://pulluptracker.app/articles/how-to-track-pull-up-progress/</loc>
-        <lastmod>2026-10-02</lastmod>
+        <lastmod>2026-10-09</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://pulluptracker.app/articles/weighted-pull-ups/</loc>
-        <lastmod>2026-10-02</lastmod>
+        <lastmod>2026-10-09</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
