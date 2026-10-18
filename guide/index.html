@@ -70,7 +70,7 @@
         "name": "I accidentally deleted an entry. Can I recover it?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Go to the History tab and look for the Recently Deleted section at the bottom. Tap to expand it, then swipe left on the entry you want to recover and tap Restore. Deleted entries are kept for 30 days before permanent removal."
+          "text": "Yes. Go to the History tab and look for the Recently Deleted section at the bottom. Tap to expand it, then swipe left on the entry you want to recover, or touch and hold it, and tap Restore. Deleted entries are kept for 30 days before permanent removal."
         }
       },
       {
@@ -207,9 +207,9 @@
         <!-- Logging Pull-Ups -->
         <section id="logging" class="guide-section fade-in">
           <h2 class="guide-section-title">Logging Pull-Ups</h2>
-          <p>Tap the <strong>+</strong> button to open the entry sheet. You can:</p>
+          <p>Tap the <strong>+</strong> button at the top right to open the entry sheet. You can:</p>
           <ul>
-            <li><strong>Set reps</strong> &mdash; Use the stepper or tap the number to type directly</li>
+            <li><strong>Set reps</strong> &mdash; Use the stepper or tap the number to type an exact count (up to 500)</li>
             <li><strong>Choose a grip</strong> &mdash; Pull-up (palms facing away), Chin-up (palms facing you), or Neutral (palms facing each other)</li>
             <li><strong>Choose a workout type</strong> &mdash; Normal, Weighted, Assisted, or Other</li>
             <li><strong>Add weight</strong> &mdash; Appears for Weighted and Assisted types, in kg or lbs (set in Settings)</li>
@@ -221,7 +221,8 @@
 
           <h3>Editing &amp; Deleting</h3>
           <p>Tap any entry in the recent list on the Home tab to edit it. To delete an entry, open it and tap Delete. A confirmation dialog appears before anything is removed.</p>
-          <p>Deleted entries are kept for 30 days before permanent removal. You can find and restore them from the <strong>Recently Deleted</strong> section at the bottom of the History tab &mdash; just swipe left on an entry and tap Restore.</p>
+          <p>In a History month you can also swipe left on an entry to delete it without opening the editor. Touching and holding any entry on Home or in a History month shows Edit and Delete.</p>
+          <p>Deleted entries are kept for 30 days before permanent removal. You can find and restore them from the <strong>Recently Deleted</strong> section at the bottom of the History tab &mdash; swipe left on an entry and tap Restore, or touch and hold it (right-click on a Mac) and choose Restore.</p>
         </section>
 
         <!-- Goals -->
@@ -269,7 +270,7 @@
           <h3>Activity Heatmap</h3>
           <p>The History tab also includes a contribution-style heatmap showing your training at a glance &mdash; each square is a day, and darker squares mean more reps. Tap or drag across the squares to see the exact total for any day; tap the selected day again to dismiss it.</p>
           <h3>Recently Deleted</h3>
-          <p>At the bottom of the History tab you'll find a <strong>Recently Deleted</strong> section. Tap the header to expand it and see entries you've deleted in the last 30 days, along with a countdown showing how many days remain before each entry is permanently removed. Swipe left on any entry and tap <strong>Restore</strong> to bring it back.</p>
+          <p>At the bottom of the History tab you'll find a <strong>Recently Deleted</strong> section. Tap the header to expand it and see entries you've deleted in the last 30 days, along with a countdown showing how many days remain before each entry is permanently removed. Swipe left on any entry and tap <strong>Restore</strong> to bring it back, or touch and hold it (right-click on a Mac) and choose Restore.</p>
         </section>
 
         <!-- Widgets -->
@@ -311,15 +312,16 @@
           <ul>
             <li><strong>Weekly notification</strong> &mdash; Arrives on the first day of your locale's week (e.g., Sunday in the US, Monday in Europe) at 10 AM with your weekly stats</li>
             <li><strong>Monthly notification</strong> &mdash; Arrives on the 1st of each month at 9 AM with your previous month's summary</li>
+            <li><strong>Yearly report</strong> &mdash; Arrives every January 1 at 10 AM with the year's totals, a chart of all twelve months, your best month, best day and longest streak, and your best set for each workout type and grip. Tapping it opens the year it announced, however late you tap</li>
             <li><strong>Streak reminder</strong> &mdash; An optional evening reminder (7 PM) that fires only when your streak is about to break, so you can save it with one quick set</li>
           </ul>
-          <p>Tapping a notification opens the corresponding screen in the app. A single toggle controls the weekly and monthly summaries; the streak reminder has its own separate toggle in Settings.</p>
+          <p>Tapping a notification opens the corresponding screen in the app. A single toggle controls the weekly, monthly and yearly summaries; the streak reminder has its own separate toggle in Settings.</p>
         </section>
 
         <!-- Siri Shortcuts -->
         <section id="siri" class="guide-section fade-in">
           <h2 class="guide-section-title">Siri Shortcuts <span class="platform-badge">iOS only</span></h2>
-          <p>Log pull-ups hands-free with Siri. Each phrase ends with the app's name on your Home Screen, <strong>Pull-Ups</strong>:</p>
+          <p>Log pull-ups hands-free with Siri. Each phrase ends with the app's name, either <strong>Pull-Ups</strong> (its Home Screen name) or <strong>Pull-Up Tracker</strong>:</p>
           <ul>
             <li><strong>"Log pull-ups in Pull-Ups"</strong> &mdash; Siri will ask how many reps, then save the entry. "Record pull-ups" and "Add pull-ups" work too.</li>
             <li><strong>"Log chin-ups in Pull-Ups"</strong> or <strong>"Log neutral-grip pull-ups in Pull-Ups"</strong> &mdash; Logs the set with that grip, and Siri's reply names it (&ldquo;Logged 10 chin-ups&rdquo;). &ldquo;Hammer-grip&rdquo; and &ldquo;parallel-grip pull-ups&rdquo; work too.</li>
@@ -327,7 +329,7 @@
             <li><strong>"Show my history in Pull-Ups"</strong> &mdash; Opens the History tab</li>
             <li><strong>"Show my records in Pull-Ups"</strong> &mdash; Opens the Records tab</li>
           </ul>
-          <p>You can also use these in the Shortcuts app to build custom automations. The Log Pull-Ups action has a <strong>Grip</strong> option, which defaults to pull-ups. Siri phrases are in English.</p>
+          <p>You can also use these in the Shortcuts app to build custom automations. The Log Pull-Ups action has a <strong>Grip</strong> option, which defaults to pull-ups. Siri phrases are in English. Every phrase above works with &ldquo;in Pull-Up Tracker&rdquo; in place of &ldquo;in Pull-Ups&rdquo;.</p>
         </section>
 
         <!-- Export & Import -->
@@ -376,7 +378,7 @@
 
           <div class="faq-item">
             <h3>I accidentally deleted an entry. Can I recover it?</h3>
-            <p>Yes! Go to the History tab and look for the <strong>Recently Deleted</strong> section at the bottom. Tap to expand it, then swipe left on the entry you want to recover and tap <strong>Restore</strong>. Deleted entries are kept for 30 days before permanent removal.</p>
+            <p>Yes! Go to the History tab and look for the <strong>Recently Deleted</strong> section at the bottom. Tap to expand it, then swipe left on the entry you want to recover, or touch and hold it, and tap <strong>Restore</strong>. Deleted entries are kept for 30 days before permanent removal.</p>
           </div>
 
           <div class="faq-item">

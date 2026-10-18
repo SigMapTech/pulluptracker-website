@@ -27,6 +27,10 @@ const routes = {
     title: "Monthly report",
     description: "Open the requested monthly pull-up report.",
   },
+  "yearly-report": {
+    title: "Yearly report",
+    description: "Open the requested yearly pull-up report.",
+  },
 };
 
 const route = window.location.pathname.split("/").filter(Boolean).at(-1);
