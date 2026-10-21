@@ -1,13 +1,11 @@
 /* Landing-page styles are isolated from the guide, articles, and legal pages. */
-.landing { --link: #a83816; }
-@media (prefers-color-scheme: dark) { .landing { --link: #ff9f88; } }
-.landing :is(a, button, input, summary, [tabindex]):focus-visible { outline: 3px solid var(--link); outline-offset: 4px; }
 .landing #download { scroll-margin-top: 76px; }
 .landing .nav-cta { min-height: 44px; }
 .eyebrow { display: flex; align-items: center; gap: 12px; font-size: .875rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 20px; }
 .hero-reassurance { margin-top: 20px; font-size: .9375rem; color: var(--text-secondary); }
 .hero-reassurance strong { color: var(--text); }
 .landing .text-link, .landing .faq a { color: var(--link); text-decoration: underline; text-underline-offset: 4px; }
+.landing .text-link:hover, .landing .faq a:hover { color: var(--link-hover); }
 /* Four phones: let them shrink to fit the column instead of using fixed widths */
 @media (width >= 640px) {
   .screenshots-grid { gap: 20px; }
@@ -71,4 +69,3 @@
   .landing .nav-title { font-size: .875rem; }
   .platform-table th, .platform-table td { padding-left: 4px; padding-right: 4px; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

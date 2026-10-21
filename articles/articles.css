@@ -46,7 +46,7 @@
 }
 
 .article-card-meta .read-more {
-  color: var(--accent);
+  color: var(--link);
   font-weight: 500;
 }
 

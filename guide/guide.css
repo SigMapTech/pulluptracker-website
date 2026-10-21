@@ -7,14 +7,20 @@ html {
 
 /* Nav back link */
 .nav-back {
+  display: inline-flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 8px;
+  margin-right: -8px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--link);
   text-decoration: none;
 }
 
 .nav-back:hover {
-  color: var(--accent-hover);
+  color: var(--link-hover);
 }
 
 /* Hero */
@@ -54,7 +60,7 @@ html {
   display: inline-block;
   font-size: 0.88rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--link);
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 10px;
@@ -65,7 +71,7 @@ html {
 
 .toc-item:hover {
   background: var(--bg-alt);
-  color: var(--accent-hover);
+  color: var(--link-hover);
 }
 
 /* Guide Content */
@@ -138,11 +144,19 @@ html {
 }
 
 .guide-section a {
-  color: var(--accent);
+  color: var(--link);
 }
 
 .guide-section a:hover {
-  color: var(--accent-hover);
+  color: var(--link-hover);
+}
+
+/* Inline links must not rely on colour alone */
+.guide-section p a,
+.guide-section li a,
+.article-more a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* FAQ Items */
@@ -196,7 +210,7 @@ html {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--link);
   background: var(--accent-soft);
   border-radius: 999px;
 }
