@@ -75,6 +75,12 @@ html {
   background: var(--bg);
 }
 
+@media print {
+  .guide-content {
+    padding-bottom: 20px;
+  }
+}
+
 .guide-section {
   max-width: 720px;
   margin: 0 auto 56px;
