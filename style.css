@@ -769,6 +769,25 @@ a:hover {
     backdrop-filter: none;
   }
 
+  .footer {
+    padding: 16px 0 8px;
+  }
+
+  .footer-grid {
+    gap: 16px;
+    margin-bottom: 8px;
+    break-inside: avoid;
+  }
+
+  .footer-bottom {
+    padding-top: 8px;
+    break-inside: avoid;
+  }
+
+  .guide-content {
+    padding-bottom: 20px;
+  }
+
   a {
     color: var(--link);
     text-decoration: underline;
