@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
   <title>Pull-Up Tracker — Build Your Pull-Up Habit</title>
   <meta name="description" content="Log pull-up sets in seconds, set goals, and see your progress on iPhone and Android. Free core features. No ads, account, or subscription.">
   <meta name="apple-itunes-app" content="app-id=6758887554">
@@ -74,7 +75,10 @@
         <img src="images/app-icon-64.webp" alt="" class="nav-icon" width="32" height="32">
         <span class="nav-title">Pull-Up Tracker</span>
       </a>
-      <a href="#download" class="nav-cta">Download</a>
+      <div class="nav-actions">
+        <a href="/guide/" class="nav-guide">Guide</a>
+        <a href="#download" class="nav-cta">Download</a>
+      </div>
     </div>
   </nav>
 
@@ -98,9 +102,10 @@
     </section>
 
     <!-- App Screenshots -->
-    <section class="screenshots" aria-label="App preview">
+    <section class="screenshots">
       <div class="container">
-        <div class="screenshots-grid">
+        <p class="screenshots-help" id="screenshots-help">Scroll or swipe to see all four screens. When the preview is focused, use the left and right arrow keys.</p>
+        <div class="screenshots-grid" tabindex="0" role="region" aria-label="App preview" aria-describedby="screenshots-help">
           <figure class="screenshot">
             <img src="images/screenshot-home.webp" alt="Home screen with today's pull-up count, daily goal, chart, and recent sets" width="660" height="1434" fetchpriority="high">
             <figcaption>Every set adds up</figcaption>
@@ -230,7 +235,7 @@
           </details>
           <details class="faq-item">
             <summary>Does it work without an internet connection?</summary>
-            <p>Yes, completely. Every feature works offline. On iOS, iCloud sync simply catches up the next time you&rsquo;re online.</p>
+            <p>You can log sets, set goals, and view statistics, records, and workout history offline. No account is needed. On iOS, iCloud sync resumes when you are online.</p>
           </details>
           <details class="faq-item">
             <summary>Can I track chin-ups?</summary>

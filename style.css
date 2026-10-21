@@ -1,5 +1,6 @@
 /* ── Custom Properties ── */
 :root {
+  color-scheme: light dark;
   --accent: #FF7A5D;
   --accent-soft: rgba(255, 122, 93, 0.08);
   /* Deeper coral for small button text — keeps white text at >= 4.5:1 (WCAG AA) */
@@ -62,6 +63,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
 
@@ -131,6 +133,7 @@ a:hover {
   top: 0;
   z-index: 100;
   background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--card-border);
 }
@@ -294,6 +297,22 @@ a:hover {
   gap: 24px;
 }
 
+.screenshots-grid:focus-visible {
+  outline-offset: -4px;
+}
+
+.screenshots-help {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 .screenshot {
   flex: 0 0 auto;
   width: 220px;
@@ -334,19 +353,30 @@ a:hover {
 }
 
 /* Small screens: horizontal scroll-snap carousel so no screenshot is cropped */
-@media (width < 640px) {
+@media (max-width: 639.98px) {
+  .screenshots-help {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0 auto 12px;
+    overflow: visible;
+    clip-path: none;
+    white-space: normal;
+    max-width: 34rem;
+    padding: 0 8px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
   .screenshots-grid {
     gap: 16px;
     justify-content: flex-start;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 8px 4px 24px;
-    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+    padding: 8px 12px 24px;
     -webkit-overflow-scrolling: touch;
-  }
-
-  .screenshots-grid::-webkit-scrollbar {
-    display: none;
   }
 
   .screenshot {
@@ -380,7 +410,7 @@ a:hover {
   }
 }
 
-@media (width >= 640px) and (width < 960px) {
+@media (min-width: 640px) and (max-width: 959.98px) {
   .screenshot {
     width: 180px;
   }
@@ -402,7 +432,7 @@ a:hover {
   gap: 20px;
 }
 
-@media (width >= 640px) {
+@media (min-width: 640px) {
   .highlights-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -471,7 +501,7 @@ a:hover {
   gap: 20px;
 }
 
-@media (width >= 640px) {
+@media (min-width: 640px) {
   .feature-groups {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -616,7 +646,7 @@ a:hover {
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1;
-  color: var(--accent);
+  color: var(--link);
   transition: transform 0.2s ease;
 }
 
@@ -699,10 +729,49 @@ a:hover {
   margin-bottom: 32px;
 }
 
-@media (width >= 640px) {
+@media (min-width: 640px) {
   .footer-grid {
     grid-template-columns: 2fr 1fr 1fr;
     gap: 48px;
+  }
+}
+
+/* Keep reading pages legible when the browser prints from a dark colour scheme. */
+@media print {
+  :root {
+    color-scheme: light;
+    --bg: #FFF;
+    --bg-alt: #FFF;
+    --text: #1D1D1F;
+    --text-secondary: #424245;
+    --card-bg: #FFF;
+    --card-border: #B8B8BD;
+    --card-shadow: none;
+    --nav-bg: #FFF;
+    --link: #6F260F;
+    --link-hover: #6F260F;
+    --footer-bg: #FFF;
+    --footer-text: #424245;
+    --footer-heading: #1D1D1F;
+    --footer-border: #B8B8BD;
+  }
+
+  body,
+  .nav,
+  .footer {
+    background: #FFF;
+    color: #1D1D1F;
+  }
+
+  .nav {
+    position: static;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: underline;
   }
 }
 
