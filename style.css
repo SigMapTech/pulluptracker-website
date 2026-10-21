@@ -97,8 +97,7 @@ a:hover {
 
 /* Dark surfaces stay dark in the light theme, so they get a light ring */
 .footer,
-.cta,
-.skip-link {
+.cta {
   --focus-ring: #FF9F88;
 }
 
