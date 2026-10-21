@@ -4,8 +4,7 @@
 .eyebrow { display: flex; align-items: center; gap: 12px; font-size: .875rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 20px; }
 .hero-reassurance { margin-top: 20px; font-size: .9375rem; color: var(--text-secondary); }
 .hero-reassurance strong { color: var(--text); }
-.landing .text-link, .landing .faq a { color: var(--link); text-decoration: underline; text-underline-offset: 4px; }
-.landing .text-link:hover, .landing .faq a:hover { color: var(--link-hover); }
+.landing .text-link, .landing .faq a { text-decoration: underline; text-underline-offset: 4px; }
 /* Four phones: let them shrink to fit the column instead of using fixed widths */
 @media (width >= 640px) {
   .screenshots-grid { gap: 20px; }

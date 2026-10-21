@@ -1,7 +1,6 @@
 /* ── Custom Properties ── */
 :root {
   --accent: #FF7A5D;
-  --accent-hover: #e8654a;
   --accent-soft: rgba(255, 122, 93, 0.08);
   /* Deeper coral for small button text — keeps white text at >= 4.5:1 (WCAG AA) */
   --accent-cta: #C8431A;
@@ -26,12 +25,12 @@
   --link: #A83816;
   --link-hover: #8A2E12;
   --focus-ring: var(--link);
+  --focus-ring-on-dark: #FF9F88;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --accent: #FF8C71;
-    --accent-hover: #ff9f88;
     --accent-soft: rgba(255, 140, 113, 0.1);
     --blue: #3B82F6;
     --blue-light: #60A5FA;
@@ -98,7 +97,7 @@ a:hover {
 /* Dark surfaces stay dark in the light theme, so they get a light ring */
 .footer,
 .cta {
-  --focus-ring: #FF9F88;
+  --focus-ring: var(--focus-ring-on-dark);
 }
 
 /* ── Skip Link ── */

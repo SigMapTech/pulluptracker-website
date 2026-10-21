@@ -15,12 +15,7 @@ html {
   margin-right: -8px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--link);
   text-decoration: none;
-}
-
-.nav-back:hover {
-  color: var(--link-hover);
 }
 
 /* Hero */
@@ -141,14 +136,6 @@ html {
   letter-spacing: -0.01em;
   margin: 24px 0 10px;
   color: var(--text);
-}
-
-.guide-section a {
-  color: var(--link);
-}
-
-.guide-section a:hover {
-  color: var(--link-hover);
 }
 
 /* Inline links must not rely on colour alone */
