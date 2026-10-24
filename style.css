@@ -6,8 +6,6 @@
   /* Deeper coral for small button text — keeps white text at >= 4.5:1 (WCAG AA) */
   --accent-cta: #C8431A;
   --accent-cta-hover: #A93812;
-  --blue: #0055FF;
-  --blue-light: #38BDF8;
   --blue-glow: rgba(0, 85, 255, 0.08);
   --bg: #FFF;
   --bg-alt: #F5F5F7;
@@ -17,7 +15,6 @@
   --card-border: rgb(0 0 0 / 0.08);
   --card-shadow: 0 2px 12px rgb(0 0 0 / 0.06);
   --nav-bg: rgb(255 255 255 / 0.82);
-  --badge-fg: #000;
   --footer-bg: #1D1D1F;
   --footer-text: #98989D;
   --footer-heading: rgba(255, 255, 255, 0.9);
@@ -33,8 +30,6 @@
   :root {
     --accent: #FF8C71;
     --accent-soft: rgba(255, 140, 113, 0.1);
-    --blue: #3B82F6;
-    --blue-light: #60A5FA;
     --blue-glow: rgba(59, 130, 246, 0.12);
     --bg: #000;
     --bg-alt: #1C1C1E;
@@ -44,7 +39,6 @@
     --card-border: rgb(255 255 255 / 0.08);
     --card-shadow: 0 2px 12px rgb(0 0 0 / 0.3);
     --nav-bg: rgb(0 0 0 / 0.82);
-    --badge-fg: #FFF;
     --footer-bg: #0A0A0A;
     --footer-text: #7C7C81;
     --footer-heading: rgba(255, 255, 255, 0.8);
@@ -266,23 +260,6 @@ a:hover {
   opacity: 0.8;
 }
 
-/* ── Social Proof ── */
-.social-proof {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 20px;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-}
-
-.social-proof-stars {
-  color: #FFB800;
-  letter-spacing: 1px;
-  font-size: 0.95rem;
-}
-
 /* ── Screenshots ── */
 .screenshots {
   padding: 20px 0 60px;
@@ -447,27 +424,6 @@ a:hover {
   box-shadow: var(--card-shadow);
 }
 
-.highlight-icon {
-  width: 52px;
-  height: 52px;
-  margin: 0 auto 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--accent), #FF9A85);
-  border-radius: 14px;
-}
-
-.highlight-icon svg {
-  width: 26px;
-  height: 26px;
-  fill: none;
-  stroke: #FFF;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
 .highlight-title {
   font-size: 1.25rem;
   font-weight: 600;
@@ -481,82 +437,13 @@ a:hover {
   line-height: 1.5;
 }
 
-/* ── Features Grid ── */
-.features {
-  padding: 80px 0;
-  background: var(--bg);
-}
-
+/* ── Section Title ── */
 .section-title {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   text-align: center;
   margin-bottom: 48px;
-}
-
-.feature-groups {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-@media (min-width: 640px) {
-  .feature-groups {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-
-  .feature-group:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    max-width: calc(50% - 12px);
-    margin: 0 auto;
-  }
-}
-
-.feature-group {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 16px;
-  padding: 28px 24px;
-  box-shadow: var(--card-shadow);
-}
-
-.feature-group-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  margin-bottom: 16px;
-  color: var(--accent);
-}
-
-.feature-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.feature-list li {
-  display: flex;
-  align-items: flex-start;
-  font-size: 0.92rem;
-  line-height: 1.45;
-  color: var(--text-secondary);
-}
-
-.feature-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  font-size: 0.85rem;
-  background: var(--accent-soft);
-  border-radius: 8px;
-  margin-right: 10px;
-  flex-shrink: 0;
-  margin-top: 1px;
 }
 
 /* ── Reviews ── */
@@ -581,13 +468,6 @@ a:hover {
   font-size: 1.2rem;
   letter-spacing: 2px;
   margin-bottom: 16px;
-}
-
-.review-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  margin-bottom: 12px;
 }
 
 .review-quote p {
